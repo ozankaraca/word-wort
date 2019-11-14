@@ -13,6 +13,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { changeAppMode } from "../../actions/index";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpellCheck } from "@fortawesome/free-solid-svg-icons";
+import { addWord } from "../../actions/index";
 
 const Splash = () => {
   const dispatch = useDispatch();
@@ -39,6 +40,43 @@ const Splash = () => {
     }
   }));
   const classes = useStyles();
+
+  const fillWithMockData = () => {
+    let tmpData = [
+      { englishWord: "Hello", germanWord: "Hallo" },
+      { englishWord: "Love", germanWord: "Liebe" },
+      { englishWord: "Hate", germanWord: "Hass" },
+      { englishWord: "Success", germanWord: "Erfolg" },
+      { englishWord: "Brother", germanWord: "Bruder" },
+      { englishWord: "Victory", germanWord: "Sieg" },
+      { englishWord: "Laugh", germanWord: "Lachen" },
+      { englishWord: "Income", germanWord: "Einkommen" },
+      { englishWord: "Truth", germanWord: "Wahrheit" },
+      { englishWord: "act", germanWord: "Akt" },
+      { englishWord: "why", germanWord: "warum" },
+      { englishWord: "ask", germanWord: "fragen" },
+      { englishWord: "men", germanWord: "Männer" },
+      { englishWord: "change", germanWord: "Veränderung" },
+      { englishWord: "went", germanWord: "ging" },
+      { englishWord: "light", germanWord: "Licht" },
+      { englishWord: "kind", germanWord: "Art" },
+      { englishWord: "off", germanWord: "aus" },
+      { englishWord: "need", germanWord: "müssen" },
+      { englishWord: "house", germanWord: "Haus" },
+      { englishWord: "picture", germanWord: "Bild" },
+      { englishWord: "try", germanWord: "versuchen" },
+      { englishWord: "us", germanWord: "uns" },
+      { englishWord: "again", germanWord: "wieder" },
+      { englishWord: "animal", germanWord: "Tier" },
+      { englishWord: "point", germanWord: "Punkt" },
+      { englishWord: "mother", germanWord: "Mutter" },
+      { englishWord: "world", germanWord: "Welt" },
+      { englishWord: "build", germanWord: "bauen" },
+      { englishWord: "self", germanWord: "selbst" }
+    ];
+
+    tmpData.map(x => dispatch(addWord(x.englishWord, x.germanWord)));
+  };
 
   return (
     <Card className={classes.card + " " + classes.cardVocab}>
@@ -67,14 +105,25 @@ const Splash = () => {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button
-          onClick={() => dispatch(changeAppMode(2))}
-          size="small"
-          disabled={isDisabled}
-          color="inherit"
-        >
-          Challenge Yourself
-        </Button>
+        {!isDisabled && (
+          <Button
+            onClick={() => dispatch(changeAppMode(2))}
+            size="small"
+            disabled={isDisabled}
+            color="inherit"
+          >
+            Challenge Yourself
+          </Button>
+        )}
+        {isDisabled && (
+          <Button
+            onClick={() => fillWithMockData()}
+            size="small"
+            color="primary"
+          >
+            Fill With Mock Data
+          </Button>
+        )}
       </CardActions>
     </Card>
   );
