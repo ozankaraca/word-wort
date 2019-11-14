@@ -4,9 +4,6 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import MainScreen from "./features/mainScreen/index";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import {
-  deepPurple,
-  amber,
-  yellow,
   green,
   pink
 } from "@material-ui/core/colors";

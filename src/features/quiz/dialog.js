@@ -21,7 +21,7 @@ const ManageDialog = () => {
         className: classes.paperRoot
       }}
       fullScreen
-      open={appMode == 2}
+      open={appMode === 2}
       TransitionComponent={Transition}
     >
       <CustomAppBar title="Quiz" color="primary" />

@@ -2,22 +2,15 @@ import React, { useState, useRef, useEffect } from "react";
 import {
   Grid,
   TextField,
-  Box,
-  Typography,
-  Icon,
   FormHelperText,
-  AppBar,
-  Toolbar,
-  IconButton,
   DialogTitle,
   DialogContent,
-  DialogContentText,
   DialogActions,
   Button,
   makeStyles
 } from "@material-ui/core";
 import { useDispatch, useSelector } from "react-redux";
-import { addWord, changeAppMode } from "../../actions/index";
+import { addWord } from "../../actions/index";
 import { green } from "@material-ui/core/colors";
 
 const useStyles = makeStyles(theme => ({
@@ -103,9 +96,7 @@ const AddWord = props => {
             ></TextField>
           </Grid>
           <Grid item xs={12}>
-            <FormHelperText>
-                Fill The Words and Hit Enter
-            </FormHelperText>
+            <FormHelperText>Fill The Words and Hit Enter</FormHelperText>
             <FormHelperText className={classes.errorMessage}>
               {germanExists && germanWord + " Exists in Vocabulary List. "}
               {englishExists && englishWord + " Exists in Vocabulary List. "}

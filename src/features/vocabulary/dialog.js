@@ -9,7 +9,6 @@ import {
   Fab
 } from "@material-ui/core";
 import AddWord from "./addWord";
-import Sta from "./table";
 import { useSelector } from "react-redux";
 import { makeStyles } from "@material-ui/styles";
 import CustomAppBar from "../layout/customAppBar";
@@ -39,7 +38,7 @@ const ManageDialog = () => {
         className: classes.paperRoot
       }}
       fullScreen
-      open={appMode == 1}
+      open={appMode === 1}
       TransitionComponent={Transition}
     >
       <CustomAppBar title="Vocabulary List" color="secondary" />

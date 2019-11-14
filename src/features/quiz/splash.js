@@ -2,11 +2,9 @@ import React, { useState, useEffect } from "react";
 import {
   Grid,
   Typography,
-  Box,
   Button,
   Card,
   CardActionArea,
-  CardMedia,
   CardContent,
   CardActions
 } from "@material-ui/core";
