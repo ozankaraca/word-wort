@@ -45,7 +45,7 @@ const ManageDialog = () => {
       <CustomAppBar title="Vocabulary List" color="secondary" />
       <Grid container justify="center">
         <Container maxWidth="md">
-          <Box mt={10}>
+          <Box mt={10} mb={10}>
             <WordList />
           </Box>
         </Container>
