@@ -1,5 +1,7 @@
 This project created to ease language learning process while demonstrating React and Material UI basics.
 
+Click here to check [demo](https://ozankaraca.github.io/word-wort).
+
 ## Available Scripts
 
 In the project directory, you can run:
