@@ -27,7 +27,7 @@ const useStyles = makeStyles(() => ({
   textError: {
     textDecoration: "line-through",
     marginLeft: "10px"
-  },
+  }
 }));
 
 const PopQuiz = () => {
@@ -71,7 +71,9 @@ const PopQuiz = () => {
     setIsGermanToBeAsked(Math.random() >= 0.5);
     setCurrentStep(currentStep + 1);
   };
-
+  useEffect(() => {
+    englishEl.current && englishEl.current.focus();
+  }, [ready]);
   useEffect(() => {
     if (currentStep < 20) {
       setCurrentEnglish(
