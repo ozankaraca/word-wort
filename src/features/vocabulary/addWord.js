@@ -74,6 +74,7 @@ const AddWord = props => {
           <Grid item xs={12}>
             <TextField
               fullWidth
+              id="englishWordField"
               value={englishWord}
               onChange={event => setEnglishWord(event.target.value)}
               onKeyPress={handleEnter}
@@ -86,6 +87,7 @@ const AddWord = props => {
           <Grid item xs={12}>
             <TextField
               fullWidth
+              id="germanWordField"
               value={germanWord}
               onChange={event => setGermanWord(event.target.value)}
               onKeyPress={handleEnter}
@@ -106,7 +108,7 @@ const AddWord = props => {
       </DialogContent>
       <DialogActions>
         <Button onClick={props.closeAction} tabIndex={-1} color="inherit">
-          back
+          BACK
         </Button>
         <Button
           disabled={
