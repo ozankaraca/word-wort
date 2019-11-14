@@ -1,7 +1,6 @@
 import { ADD_WORD, UPDATE_WORD, DELETE_WORD } from "../constants/actionTypes";
 
-const initialState = [
-];
+const initialState = [];
 
 const WordList = (state = initialState, action) => {
   switch (action.type) {
