@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/word-wort/static/css/main.34de6062.chunk.css",
-    "main.js": "/word-wort/static/js/main.abf8c2ec.chunk.js",
-    "main.js.map": "/word-wort/static/js/main.abf8c2ec.chunk.js.map",
+    "main.js": "/word-wort/static/js/main.ec717e2c.chunk.js",
+    "main.js.map": "/word-wort/static/js/main.ec717e2c.chunk.js.map",
     "runtime-main.js": "/word-wort/static/js/runtime-main.7ff162df.js",
     "runtime-main.js.map": "/word-wort/static/js/runtime-main.7ff162df.js.map",
     "static/js/2.b0188963.chunk.js": "/word-wort/static/js/2.b0188963.chunk.js",
     "static/js/2.b0188963.chunk.js.map": "/word-wort/static/js/2.b0188963.chunk.js.map",
     "index.html": "/word-wort/index.html",
-    "precache-manifest.b7eccbb8c9e3295dbdb418128392360e.js": "/word-wort/precache-manifest.b7eccbb8c9e3295dbdb418128392360e.js",
+    "precache-manifest.789b5510016d3f08bbdb7863024a4dad.js": "/word-wort/precache-manifest.789b5510016d3f08bbdb7863024a4dad.js",
     "service-worker.js": "/word-wort/service-worker.js",
     "static/css/main.34de6062.chunk.css.map": "/word-wort/static/css/main.34de6062.chunk.css.map"
   },
@@ -16,6 +16,6 @@
     "static/js/runtime-main.7ff162df.js",
     "static/js/2.b0188963.chunk.js",
     "static/css/main.34de6062.chunk.css",
-    "static/js/main.abf8c2ec.chunk.js"
+    "static/js/main.ec717e2c.chunk.js"
   ]
 }
