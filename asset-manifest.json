@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/word-wort/static/css/main.34de6062.chunk.css",
+    "main.js": "/word-wort/static/js/main.97ad6795.chunk.js",
+    "main.js.map": "/word-wort/static/js/main.97ad6795.chunk.js.map",
+    "runtime-main.js": "/word-wort/static/js/runtime-main.7ff162df.js",
+    "runtime-main.js.map": "/word-wort/static/js/runtime-main.7ff162df.js.map",
+    "static/js/2.b0188963.chunk.js": "/word-wort/static/js/2.b0188963.chunk.js",
+    "static/js/2.b0188963.chunk.js.map": "/word-wort/static/js/2.b0188963.chunk.js.map",
+    "index.html": "/word-wort/index.html",
+    "precache-manifest.8e20a91c9c1335b0afbd22d56257c79d.js": "/word-wort/precache-manifest.8e20a91c9c1335b0afbd22d56257c79d.js",
+    "service-worker.js": "/word-wort/service-worker.js",
+    "static/css/main.34de6062.chunk.css.map": "/word-wort/static/css/main.34de6062.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7ff162df.js",
+    "static/js/2.b0188963.chunk.js",
+    "static/css/main.34de6062.chunk.css",
+    "static/js/main.97ad6795.chunk.js"
+  ]
+}
