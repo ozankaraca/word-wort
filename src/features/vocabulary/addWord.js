@@ -110,7 +110,10 @@ const AddWord = props => {
         </Button>
         <Button
           disabled={
-            englishExists || !englishWord || germanExists || !germanWord
+            englishExists === true ||
+            !(englishWord.length > 0) ||
+            germanExists === true ||
+            !(germanWord.length > 0)
           }
           onClick={() => saveData()}
           tabIndex={-1}
